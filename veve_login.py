@@ -62,7 +62,7 @@ with open("proxies.txt") as f:
             count = count + 1
 
 
-helheim.auth('8a4111e9-52b6-46eb-bbb8-c426b3bde831')
+helheim.auth('')
 
 def injection(session, response):
     if helheim.isChallenge(session, response):
