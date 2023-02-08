@@ -117,13 +117,13 @@ async def load_tasks():
 
 async def check_updates():
     try:
-        r = requests.get("https://fathomless-garden-52956.herokuapp.com/version")
+        r = requests.get("")
         data = json.loads(r.content)
 
         if data[0]["version"] != version:
             print("[" + str(datetime.now()) + "]" + " " + "|" + " " + FgYellow + "Found A New Update, Downloading..." + Reset)
 
-            r = requests.get("https://fathomless-garden-52956.herokuapp.com/download/wMD58MgYfl")
+            r = requests.get("")
             data = json.loads(r.content)
             download_url = data[0]["link"]
             r = requests.get(download_url)
