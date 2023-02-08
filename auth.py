@@ -18,7 +18,7 @@ Reset = "\x1b[0m"
 
 
 
-API_KEY = 'pk_aCNZOQmLLP42C8pNQCsRnsJEdc4UaNXw'
+API_KEY = ''
 
 def log(content):
 	print('[{}] {}'.format(datetime.utcnow(), content))
